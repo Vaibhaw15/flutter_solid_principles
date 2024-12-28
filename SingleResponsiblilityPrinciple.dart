@@ -1,11 +1,17 @@
-class AuthManager{
-   bool authenticateUser(String user,String password){
-     return true;
-   }
+// Single Responsibility Principle - 2 seperate classes, 1 for each task
+
+// Authentication manager class responsible for authentication logic
+class AuthManager {
+  bool authenticateUser(String username, String password) {
+    // Logic to authenticate user
+    return true; // Simulated success for the example
+  }
 }
 
-class profileManager{
-  void updateUserProfile(String userName, Map<String,dynamic>){
-    print('User profile updated for $user');
-   }
+// Profile manager class responsible for user profile management logic
+class ProfileManager {
+  void updateUserProfile(String username, Map<String, dynamic> profileData) {
+    // Logic to update user profile
+    print('User profile updated for $username');
+  }
 }
